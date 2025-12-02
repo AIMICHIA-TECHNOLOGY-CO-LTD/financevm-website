@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FinanceVM - A Sovereign, Standard-Compliant Virtual Machine for Financial Asset Tokenisation">
+    <title>FinanceVM - Sovereign Virtual Machine for Financial Asset Tokenisation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-content">
+            <div class="logo-container">
+                <!-- Logo placeholder - 預留 Logo 位置 -->
+                <div class="logo-placeholder">FinanceVM</div>
+            </div>
+            <div class="nav-links">
+                <a href="#architecture" data-en="Architecture" data-zh="架構">Architecture</a>
+                <a href="#features" data-en="Features" data-zh="特色">Features</a>
+                <a href="#standards" data-en="Standards" data-zh="標準">Standards</a>
+                <a href="#contact" data-en="Contact" data-zh="聯繫">Contact</a>
+                <a href="https://forms.gle/pVJ7VxRo8prpocMF9" target="_blank" class="btn-primary" data-en="Early Partners" data-zh="早期合作夥伴">Early Partners</a>
+                <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+                    <span class="lang-en">中文</span>
+                    <span class="lang-zh">EN</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#architecture" data-en="Architecture" data-zh="架構">Architecture</a>
+        <a href="#features" data-en="Features" data-zh="特色">Features</a>
+        <a href="#standards" data-en="Standards" data-zh="標準">Standards</a>
+        <a href="#contact" data-en="Contact" data-zh="聯繫">Contact</a>
+        <a href="https://forms.gle/pVJ7VxRo8prpocMF9" target="_blank" class="btn-primary" data-en="Early Partners" data-zh="早期合作夥伴">Early Partners</a>
+        <button class="lang-toggle" id="langToggleMobile" aria-label="Switch Language">
+            <span class="lang-en">中文</span>
+            <span class="lang-zh">EN</span>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                <span class="lang-en">A Sovereign, Standard-Compliant Virtual Machine for <span class="highlight">Financial Asset Tokenisation</span></span>
+                <span class="lang-zh">專為<span class="highlight">金融資產代幣化</span>設計的<br>主權標準合規虛擬機</span>
+            </h1>
+            <p class="hero-subtitle" data-en="FinanceVM provides arbitrary-precision arithmetic, ISO standard compliance, and sovereign control, creating a bridge between traditional financial engineering and decentralized technology for institutions." data-zh="FinanceVM 提供任意精度運算、ISO 標準合規與主權控制，為機構創建傳統金融工程與去中心化技術之間的橋樑">
+                FinanceVM provides arbitrary-precision arithmetic, ISO standard compliance, and sovereign control, creating a bridge between traditional financial engineering and decentralized technology for institutions.
+            </p>
+            <div class="hero-actions">
+                <a href="https://forms.gle/pVJ7VxRo8prpocMF9" target="_blank" class="btn-large btn-primary" data-en="Become an Early Partner" data-zh="成為早期合作夥伴">
+                    Become an Early Partner
+                </a>
+                <a href="https://drive.google.com/file/d/1eVgSnquUofaIPQvQTAC-T1TmubrfqZ7c/view?usp=drive_link" target="_blank" class="btn-large btn-secondary" data-en="Read Whitepaper" data-zh="閱讀白皮書">
+                    Read Whitepaper
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title" data-en="Solving the Financial Dilemma of Traditional Blockchains" data-zh="解決傳統區塊鏈的金融困境">Solving the Financial Dilemma of Traditional Blockchains</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">⚠️</div>
+                    <h3 data-en="Precision Risks" data-zh="精度風險">Precision Risks</h3>
+                    <p data-en="Traditional smart contracts lack native support for high-precision decimal arithmetic, leading to unacceptable rounding errors in financial calculations." data-zh="傳統智能合約缺乏高精度十進制運算支援，導致金融計算中不可接受的四捨五入誤差">Traditional smart contracts lack native support for high-precision decimal arithmetic, leading to unacceptable rounding errors in financial calculations.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⛽</div>
+                    <h3 data-en="Gas Inefficiency" data-zh="Gas 效率低下">Gas Inefficiency</h3>
+                    <p data-en="Running complex risk models (e.g., Monte Carlo simulations for options pricing) on-chain is cost-prohibitive and slow." data-zh="在鏈上運行複雜風險模型（如期權定價的蒙地卡羅模擬）成本高昂且緩慢">Running complex risk models (e.g., Monte Carlo simulations for options pricing) on-chain is cost-prohibitive and slow.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📋</div>
+                    <h3 data-en="Lack of Standards" data-zh="缺乏標準">Lack of Standards</h3>
+                    <p data-en="Tokens are typically defined by technical interfaces rather than financial definitions, creating a disconnect between code and legal/financial reality." data-zh="代幣通常由技術介面定義，而非金融定義，造成代碼與法律/金融現實脫節">Tokens are typically defined by technical interfaces rather than financial definitions, creating a disconnect between code and legal/financial reality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Value Propositions -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-en="Core Value Propositions" data-zh="核心價值主張">Core Value Propositions</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-number">01</div>
+                    <h3 data-en="Precision" data-zh="精度">Precision</h3>
+                    <p data-en="Zero floating-point errors through arbitrary-precision arithmetic, ensuring accuracy in financial calculations." data-zh="通過任意精度運算實現零浮點誤差，確保金融計算的精確性">Zero floating-point errors through arbitrary-precision arithmetic, ensuring accuracy in financial calculations.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">02</div>
+                    <h3 data-en="Compliance" data-zh="合規">Compliance</h3>
+                    <p data-en="Built on ISO financial standards (UPI, vLEI, DTI, ISO 20022)." data-zh="建立在 ISO 金融標準之上（UPI、vLEI、DTI、ISO 20022）">Built on ISO financial standards (UPI, vLEI, DTI, ISO 20022).</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">03</div>
+                    <h3 data-en="Privacy" data-zh="隱私">Privacy</h3>
+                    <p data-en="Sovereign nodes maintain regulatory control, allowing institutions to independently manage their FVM instances." data-zh="主權節點維持監管控制，機構可獨立管理其 FVM 實例">Sovereign nodes maintain regulatory control, allowing institutions to independently manage their FVM instances.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">04</div>
+                    <h3 data-en="Interoperability" data-zh="互操作性">Interoperability</h3>
+                    <p data-en="Standards-based Financial Object Model (FOM) using FINOS CDM." data-zh="基於標準的金融物件模型（FOM），使用 FINOS CDM">Standards-based Financial Object Model (FOM) using FINOS CDM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="section section-dark" id="architecture">
+        <div class="container">
+            <h2 class="section-title" data-en="FinanceVM Architecture" data-zh="FinanceVM 架構">FinanceVM Architecture</h2>
+            <p class="section-intro" data-en="FVM is designed as a modular, standalone infrastructure that can operate as a single node or a high-performance compute cluster." data-zh="FVM 設計為模組化的獨立基礎設施，可作為單一節點或高性能計算叢集運作">
+                FVM is designed as a modular, standalone infrastructure that can operate as a single node or a high-performance compute cluster.
+            </p>
+            <div class="architecture-grid">
+                <div class="arch-card">
+                    <div class="arch-icon">🏛️</div>
+                    <h3 data-en="Sovereign Execution Environment" data-zh="主權執行環境">Sovereign Execution Environment</h3>
+                    <p data-en="Each FVM instance is independently controlled by its operator (e.g., a bank or asset manager) and can be started, stopped, or paused according to local regulatory requirements." data-zh="每個 FVM 實例由其營運者（如銀行或資產管理公司）獨立控制，可根據當地監管要求啟動、停止或暫停">Each FVM instance is independently controlled by its operator (e.g., a bank or asset manager) and can be started, stopped, or paused according to local regulatory requirements.</p>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon">📊</div>
+                    <h3 data-en="Financial Object Model" data-zh="金融物件模型">Financial Object Model</h3>
+                    <p data-en="Uses a structured object model: FINOS CDM and ISO 4914 (UPI) for product definition, with financial algorithms handling state transitions." data-zh="使用結構化物件模型：FINOS CDM 和 ISO 4914（UPI）進行產品定義，金融演算法處理狀態轉換">Uses a structured object model: FINOS CDM and ISO 4914 (UPI) for product definition, with financial algorithms handling state transitions.</p>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon">🔗</div>
+                    <h3 data-en="Model Context Protocol (MCP)" data-zh="模型情境協議（MCP）">Model Context Protocol (MCP)</h3>
+                    <p data-en="Different FVM instances communicate via the Model Context Protocol over secure channels, supporting peer-to-peer asset swaps." data-zh="不同 FVM 實例之間透過安全通道上的模型情境協議進行通信，支援點對點資產交換">Different FVM instances communicate via the Model Context Protocol over secure channels, supporting peer-to-peer asset swaps.</p>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon">🔐</div>
+                    <h3 data-en="Audit Layer" data-zh="審計層">Audit Layer</h3>
+                    <p data-en="Public chains are used solely for transparency and auditing, with key lifecycle events serialized using ISO 20022 XML standards and anchored." data-zh="公鏈僅用於透明度和審計，關鍵生命週期事件使用 ISO 20022 XML 標準序列化並錨定">Public chains are used solely for transparency and auditing, with key lifecycle events serialized using ISO 20022 XML standards and anchored.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+        <div class="container">
+            <h2 class="section-title" data-en="Technical Advantages" data-zh="技術優勢">Technical Advantages</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <div class="feature-content">
+                        <h3 data-en="Zero Floating-Point Error Math Core" data-zh="零浮點錯誤的數學核心">Zero Floating-Point Error Math Core</h3>
+                        <p data-en="Ensures precision in financial calculations, avoiding the accuracy issues of traditional smart contracts." data-zh="確保金融計算的精確性，避免傳統智能合約的精度問題">Ensures precision in financial calculations, avoiding the accuracy issues of traditional smart contracts.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-content">
+                        <h3 data-en="GPU Cluster Integration" data-zh="GPU 叢集整合">GPU Cluster Integration</h3>
+                        <p data-en="Handles complex financial engineering tasks (VaR calculations, Monte Carlo simulations), treating financial engineering as a first-class citizen." data-zh="處理複雜金融工程任務（VaR 計算、蒙地卡羅模擬），將金融工程視為一等公民">Handles complex financial engineering tasks (VaR calculations, Monte Carlo simulations), treating financial engineering as a first-class citizen.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-content">
+                        <h3 data-en="Post-Quantum Cryptography Ready" data-zh="後量子密碼學準備">Post-Quantum Cryptography Ready</h3>
+                        <p data-en="Transport layer designed to upgrade to post-quantum cryptography, ensuring long-term security of financial data." data-zh="傳輸層設計可升級至後量子密碼學，確保金融數據的長期安全">Transport layer designed to upgrade to post-quantum cryptography, ensuring long-term security of financial data.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌐</div>
+                    <div class="feature-content">
+                        <h3 data-en="Network of Sovereign States" data-zh="主權狀態網路">Network of Sovereign States</h3>
+                        <p data-en="Moves away from the 'One World State' model, adopting a 'Network of Sovereign States' architecture." data-zh="擺脫「單一世界狀態」模型，採用「主權狀態網路」架構">Moves away from the "One World State" model, adopting a "Network of Sovereign States" architecture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards -->
+    <section class="section section-dark" id="standards">
+        <div class="container">
+            <h2 class="section-title" data-en="Standards Compliance" data-zh="標準合規">Standards Compliance</h2>
+            <p class="section-intro" data-en="FVM is built upon the following international standards to ensure integration with legacy banking systems." data-zh="FVM 建立在以下國際標準之上，確保與傳統銀行系統整合">
+                FVM is built upon the following international standards to ensure integration with legacy banking systems.
+            </p>
+            <div class="standards-grid">
+                <div class="standard-card">
+                    <div class="standard-badge">ISO 4914</div>
+                    <h3>UPI</h3>
+                    <p data-en="Unique Product Identifier" data-zh="唯一產品識別碼">Unique Product Identifier</p>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-badge">ISO 17442</div>
+                    <h3>vLEI</h3>
+                    <p data-en="Verifiable Digital Identity" data-zh="可驗證數位身份">Verifiable Digital Identity</p>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-badge">ISO 24165</div>
+                    <h3>DTI</h3>
+                    <p data-en="Digital Token Identifier Registry" data-zh="數位代幣識別碼註冊">Digital Token Identifier Registry</p>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-badge">ISO 20022</div>
+                    <h3 data-en="Messaging Standard" data-zh="訊息標準">Messaging Standard</h3>
+                    <p data-en="Messaging and Activity Logging" data-zh="訊息傳遞和活動記錄">Messaging and Activity Logging</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Ready to Redefine Financial Blockchain?" data-zh="準備好重新定義金融區塊鏈了嗎？">Ready to Redefine Financial Blockchain?</h2>
+                <p data-en="Join our early partner program and help shape the future of digitized finance." data-zh="加入我們的早期合作夥伴計劃，共同塑造數位化金融的未來">Join our early partner program and help shape the future of digitized finance.</p>
+                <div class="cta-actions">
+                    <a href="https://forms.gle/pVJ7VxRo8prpocMF9" target="_blank" class="btn-large btn-primary" data-en="Fill Partner Survey" data-zh="填寫合作夥伴問卷">
+                        Fill Partner Survey
+                    </a>
+                    <a href="mailto:jim.lin@aimichia.com" class="btn-large btn-secondary" data-en="Contact Us" data-zh="聯繫我們">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">FinanceVM</div>
+                    <p class="footer-tagline" data-en="Redefining Financial Blockchain" data-zh="重新定義金融區塊鏈">Redefining Financial Blockchain</p>
+                    <p class="footer-company">Aimichia Technology Co., Ltd.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/AIMICHIA-TECHNOLOGY-CO-LTD/financevm" target="_blank" aria-label="GitHub" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Product" data-zh="產品">Product</h4>
+                    <a href="#architecture" data-en="Architecture" data-zh="架構">Architecture</a>
+                    <a href="#features" data-en="Features" data-zh="特色功能">Features</a>
+                    <a href="#standards" data-en="Standards" data-zh="標準合規">Standards</a>
+                    <a href="https://drive.google.com/file/d/1eVgSnquUofaIPQvQTAC-T1TmubrfqZ7c/view?usp=drive_link" target="_blank" data-en="Whitepaper" data-zh="白皮書">Whitepaper</a>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-zh="聯繫方式">Contact</h4>
+                    <a href="mailto:jim.lin@aimichia.com">jim.lin@aimichia.com</a>
+                    <a href="https://www.aimichia.com" target="_blank">www.aimichia.com</a>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Partnership" data-zh="合作">Partnership</h4>
+                    <a href="https://forms.gle/pVJ7VxRo8prpocMF9" target="_blank" data-en="Early Partner Survey" data-zh="早期合作夥伴問卷">Early Partner Survey</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2017-2025 Aimichia Technology Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
